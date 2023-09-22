@@ -1,0 +1,152 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ecommerce product page</title>
+  </head>
+  <body>
+    <header>
+      <div class="container header-container">
+        <div
+          class="icon-button hamburger-menu-button"
+          id="hamburger-menu-button"
+        >
+          <img src="./assets/icons/hamburger-menu.svg" alt="menu" />
+        </div>
+        <img src="./assets/images/logo.png" alt="sneakers" class="logo" />
+        <nav>
+          <ul class="nav-list" id="nav-list">
+            <li class="nav-item close-mobile-menu-button-container">
+              <button class="icon-button" id="close-mobile-menu-button">
+                &times;
+              </button>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Men</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Women</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="icon-button shoping-cart-button button-with-badge">
+          <img src="./assets/icons/shoping-cart.svg" alt="shoping cart" />
+          <span class="button-badge" data-value="2" id="output-badge">2</span>
+        </button>
+        <img src="./assets/images/avatar.png" class="avatar" alt="John Doe" />
+      </div>
+    </header>
+    <main>
+      <div class="container product-container">
+        <section class="product-preview product-container-column">
+          <button class="image-button image-button-prev" id="image-button-prev">
+            <img src="./assets/icons/chevron-left.png" alt="left" />
+          </button>
+          <button class="image-button image-button-next" id="image-button-next">
+            <img src="./assets/icons/chevron-right.png" alt="right" />
+          </button>
+          <img
+            src="./assets/images/image-product-1.jpg"
+            class="product-image"
+            id="product-image"
+          />
+          <div class="thumbnails-container" id="thumbnails-container">
+            <img
+              src="./assets/images/image-product-1-thumbnail.jpg"
+              class="thumbnail thumbnail-active"
+              id="1"
+            />
+            <img
+              src="./assets/images/image-product-2-thumbnail.jpg"
+              class="thumbnail"
+              id="2"
+            />
+            <img
+              src="./assets/images/image-product-3-thumbnail.jpg"
+              class="thumbnail"
+              id="3"
+            />
+            <img
+              src="./assets/images/image-product-4-thumbnail.jpg"
+              class="thumbnail"
+              id="4"
+            />
+          </div>
+        </section>
+
+        <section class="product-details product-container-column">
+          <h1 class="company-name">SNEAKER COMPANY</h1>
+          <p class="product-name">
+            Fall Limited Edition <br />
+            Sneakers
+          </p>
+          <p class="product-description">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price-container">
+            <span class="price">$125.00</span>
+            <span class="badge">-50%</span>
+            <span class="initial-price">$250.00</span>
+          </div>
+          <div class="add-to-cart-form">
+            <div class="counter" id="counter">
+              <button id="decrement">-</button>
+              <span class="output" id="counter-output">0</span>
+              <button id="increment">+</button>
+            </div>
+            <button class="button add-to-cart-button" id="add-to-cart">
+              Add to cart
+            </button>
+          </div>
+        </section>
+      </div>
+      <div class="lightbox-container" id="lightbox-container">
+        <button class="icon-button" id="close-lightbox-button">&times;</button>
+        <img
+          src="./assets/images/image-product-1.jpg"
+          class="lightbox"
+          alt=""
+        />
+        <div class="thumbnails-container">
+          <img
+            src="./assets/images/image-product-1-thumbnail.jpg"
+            class="thumbnail thumbnail-active"
+          />
+          <img
+            src="./assets/images/image-product-2-thumbnail.jpg"
+            class="thumbnail"
+          />
+          <img
+            src="./assets/images/image-product-3-thumbnail.jpg"
+            class="thumbnail"
+          />
+          <img
+            src="./assets/images/image-product-4-thumbnail.jpg"
+            class="thumbnail"
+          />
+        </div>
+      </div>
+    </main>
+
+    <div id="backdrop" class="backdrop"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
