@@ -1,0 +1,86 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 90%;
+        margin: 0 auto;
+        background-color: beige;
+      }
+
+      .container-header {
+        display: flex;
+        align-items: center;
+        padding: 10px 30px;
+        gap: 20px;
+      }
+
+      .container-header button {
+        margin-left: auto;
+      }
+
+      .container-content {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: space-around;
+        gap: 20px;
+      }
+
+      .column {
+        background-color: aqua;
+        flex-basis: 47%;
+        padding: 20px;
+      }
+
+      nav {
+        display: none;
+      }
+
+      @media screen and (min-width: 768px) {
+        nav {
+          display: block;
+        }
+
+        .container {
+          width: 70%;
+        }
+
+        .container-content {
+          flex-direction: row;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container container-header">
+        <h1>LOGO</h1>
+        <nav>
+          <span>Temp1</span>
+          <span>Temp2</span>
+          <span>Temp3</span>
+        </nav>
+        <button>Click me</button>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="container-content">
+        <div class="column col-1">
+          <h2>Column 1</h2>
+        </div>
+        <div class="column col2">
+          <h2>Column 2</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
